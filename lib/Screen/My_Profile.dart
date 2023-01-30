@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gofresh/Screen/Profile.dart';
 
 class My_Profile extends StatefulWidget {
   @override
@@ -29,7 +30,14 @@ class _My_ProfileState extends State<My_Profile> {
                 SizedBox(height: 50.0,),
                 Row(
                   children: [
-                    Image.asset("img/Categories.png",width: 20.0,height: 20.0,),
+                    GestureDetector(
+                        onTap:(){
+                          Navigator.of(context).pop();
+                          Navigator.of(context).push(
+                              MaterialPageRoute(builder: (context)=>Profile())
+                          );
+                        },
+                        child: Image.asset("img/Categories.png",width: 20.0,height: 20.0,)),
                     SizedBox(width: 130.0,),
                     Text("Profile",style: TextStyle(
                       fontFamily: "SourceSansPro Bold",

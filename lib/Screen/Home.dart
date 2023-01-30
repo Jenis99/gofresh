@@ -23,11 +23,11 @@ class _HomeState extends State<Home> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Column(
                           children: [
                            Row(
+                             crossAxisAlignment: CrossAxisAlignment.start,
                              children: [
                                Image.asset("img/work.png",width: 20.0,),
                                SizedBox(width: 5.0,),
@@ -68,8 +68,7 @@ class _HomeState extends State<Home> {
                   ],
                 ),
               ),
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Container(
+              Container(
                 padding: EdgeInsets.only(left: 10.0,right: 10.0),
                 child: Column(
                   children: [
@@ -125,7 +124,7 @@ class _HomeState extends State<Home> {
                         //       Radius.circular(5.0) //
                         // ),),
 
-                        child: Image.asset("img/1homevegetables.png",width: 100.0,height: 100.0,
+                        child: Image.asset("img/home_vegetables.png",width: 100.0,height: 100.0,
                         ),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
@@ -141,7 +140,7 @@ class _HomeState extends State<Home> {
                     children: [
                       Container(
                         padding: EdgeInsets.all(8.0),
-                        child: Image.asset("img/2Homedl.beatsnoop 1.png",width: 100.0,height: 100.0,),
+                        child: Image.asset("img/home_fruits.png",width: 100.0,height: 100.0,),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Color(0xffFFEBE6),
@@ -156,7 +155,7 @@ class _HomeState extends State<Home> {
                     children: [
                       Container(
                         padding: EdgeInsets.all(8.0),
-                        child: Image.asset("img/3Homebakery.png",width: 100.0,height: 100.0,),
+                        child: Image.asset("img/home_bakery.png",width: 100.0,height: 100.0,),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Color(0xffFFF4D8),
@@ -175,7 +174,7 @@ class _HomeState extends State<Home> {
                     children: [
                       Container(
                         padding: EdgeInsets.all(8.0),
-                        child: Image.asset("img/4Homeatta-mainda_banner_1416x636 2.png",width: 100.0,height: 100.0,),
+                        child: Image.asset("img/home_aata.png",width: 100.0,height: 100.0,),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Color(0xffF9EEFF),
@@ -190,7 +189,7 @@ class _HomeState extends State<Home> {
                     children: [
                       Container(
                         padding: EdgeInsets.all(8.0),
-                        child: Image.asset("img/5HomeOhho-Categories_App 3.png",width: 100.0,height: 100.0,),
+                        child: Image.asset("img/home_baverages.png",width: 100.0,height: 100.0,),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Color(0xffEDEFFF),
@@ -206,7 +205,7 @@ class _HomeState extends State<Home> {
                       Container(
                         padding: EdgeInsets.all(8.0),
 
-                        child: Image.asset("img/6HomeOhho-Categories_App 1.png",width: 100.0,height: 100.0,),
+                        child: Image.asset("img/home_snacks.png",width: 100.0,height: 100.0,),
 
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
@@ -232,7 +231,7 @@ class _HomeState extends State<Home> {
                         //       Radius.circular(5.0) //
                         // ),),
 
-                        child: Image.asset("img/7HomeOhho-Categories_App 2.png",width: 100.0,height: 100.0,),
+                        child: Image.asset("img/home_babycare.png",width: 100.0,height: 100.0,),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Color(0xffE2F5FF),
@@ -248,7 +247,7 @@ class _HomeState extends State<Home> {
                       Container(
                         padding: EdgeInsets.all(8.0),
 
-                        child: Image.asset("img/8HomeOhho-Categories_App 4.png",width: 100.0,height: 100.0,),
+                        child: Image.asset("img/home_peronalcare.png",width: 100.0,height: 100.0,),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Color(0xffFFEBE6),
@@ -264,7 +263,7 @@ class _HomeState extends State<Home> {
                       Container(
                         padding: EdgeInsets.all(8.0),
 
-                        child: Image.asset("img/9HomeOhho-Categories_App 5.png",width: 100.0,height: 100.0,),
+                        child: Image.asset("img/home_housecleaning.png",width: 100.0,height: 100.0,),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Color(0xffFFF4D8),
@@ -363,7 +362,7 @@ class _HomeState extends State<Home> {
                               child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Image.asset("img/dl.beatsnoop 7.png",width: 150.0,height: 150.0,),
+                                    Image.asset("img/corinander_leaves.png",width: 150.0,height: 150.0,),
                                     SizedBox(height: 1.0,),
                                     Text("Fresh Organic",style: TextStyle(
                                       fontSize: 18.0,
@@ -463,7 +462,7 @@ class _HomeState extends State<Home> {
                               child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Image.asset("img/dl.beatsnoop 7.png",width: 150.0,height: 150.0,),
+                                    Image.asset("img/corinander_leaves.png",width: 150.0,height: 150.0,),
                                     SizedBox(height: 1.0,),
                                     Text("Fresh Organic",style: TextStyle(
                                       fontSize: 18.0,
@@ -563,7 +562,7 @@ class _HomeState extends State<Home> {
                               child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Image.asset("img/dl.beatsnoop 7.png",width: 150.0,height: 150.0,),
+                                    Image.asset("img/corinander_leaves.png",width: 150.0,height: 150.0,),
                                     SizedBox(height: 1.0,),
                                     Text("Fresh Organic",style: TextStyle(
                                       fontSize: 18.0,
@@ -663,7 +662,7 @@ class _HomeState extends State<Home> {
                               child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Image.asset("img/dl.beatsnoop 7.png",width: 150.0,height: 150.0,),
+                                    Image.asset("img/corinander_leaves.png",width: 150.0,height: 150.0,),
                                     SizedBox(height: 1.0,),
                                     Text("Fresh Organic",style: TextStyle(
                                       fontSize: 18.0,
@@ -701,107 +700,6 @@ class _HomeState extends State<Home> {
                             )
                         ),
                       ),
-                      Container(
-                        child:
-                        Card(
-                            elevation: 15.0,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20.0),
-                            ),
-                            child: Container(
-                              padding: EdgeInsets.only(left: 10.0,right: 10.0),
-                              child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Image.asset("img/strawberry.png",width: 150.0,height: 150.0,),
-                                    SizedBox(height: 1.0,),
-                                    Text("Freshly packed",style: TextStyle(
-                                      fontSize: 18.0,
-                                      fontFamily: "SourceSansPro Bold",
-                                    ),),
-                                    Text("Strawberry Fruits",style: TextStyle(
-                                      fontSize: 18.0,
-                                      fontFamily: "SourceSansPro Bold",
-                                    ),),
-                                    SizedBox(height: 5.0,),
-                                    Text("1 Kg",style: TextStyle(
-                                        fontSize: 15.0,
-                                        color: Color(0xffC0C0C0)
-                                    ),),
-                                    SizedBox(height: 10.0,),
-                                    Text("Rs. 125",style: TextStyle(
-                                      fontFamily: "SourceSansPro Bold",
-                                      fontSize: 25.0,
-                                    ),),
-                                    RichText(
-                                        text: new TextSpan(
-                                          children: <TextSpan>[
-                                            new TextSpan(
-                                              text: 'Rs 200',
-                                              style: new TextStyle(
-                                                color: Color(0xffC0C0C0),
-                                                decoration: TextDecoration.lineThrough,
-                                              ),
-                                            ),
-                                          ],
-                                        )
-                                    ),
-                                  ]
-                              ),
-                            )
-                        ),
-                      ),
-                      Container(
-                        child:
-                        Card(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20.0),
-                            ),
-                            elevation: 15.0,
-                            child: Container(
-                              padding: EdgeInsets.only(left: 10.0,right: 10.0),
-                              child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Image.asset("img/dl.beatsnoop 7.png",width: 150.0,height: 150.0,),
-                                    SizedBox(height: 1.0,),
-                                    Text("Fresh Organic",style: TextStyle(
-                                      fontSize: 18.0,
-                                      fontFamily: "SourceSansPro Bold",
-                                    ),),
-                                    Text("Corinander Leaves",style: TextStyle(
-                                      fontSize: 18.0,
-                                      fontFamily: "SourceSansPro Bold",
-                                    ),),
-                                    SizedBox(height: 5.0,),
-                                    Text("1 Kg",style: TextStyle(
-                                        fontSize: 15.0,
-                                        color: Color(0xffC0C0C0)
-                                    ),),
-                                    SizedBox(height: 10.0,),
-                                    Text("Rs. 75",style: TextStyle(
-                                      fontFamily: "SourceSansPro Bold",
-                                      fontSize: 25.0,
-                                    ),),
-                                    RichText(
-                                        text: new TextSpan(
-                                          children: <TextSpan>[
-                                            new TextSpan(
-                                              text: 'Rs 100',
-                                              style: new TextStyle(
-                                                color: Color(0xffC0C0C0),
-                                                decoration: TextDecoration.lineThrough,
-                                              ),
-                                            ),
-                                          ],
-                                        )
-                                    ),
-                                  ]
-                              ),
-                            )
-                        ),
-                      ),
-
                     ]
                 ),
               ),

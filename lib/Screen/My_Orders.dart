@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gofresh/Screen/First_order.dart';
+import 'package:gofresh/Screen/Profile.dart';
 
 class My_Orders extends StatefulWidget {
   @override
@@ -17,7 +18,14 @@ class _My_OrdersState extends State<My_Orders> {
             SizedBox(height: 50.0,),
             Row(
               children: [
-                Image.asset("img/Categories.png",width: 20.0,height: 20.0,),
+                GestureDetector(
+                    onTap:(){
+                      Navigator.of(context).pop();
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context)=>Profile())
+                      );
+                    },
+                    child: Image.asset("img/Categories.png",width: 20.0,height: 20.0,)),
                 SizedBox(width: 130.0,),
                 Text("My Order",style: TextStyle(
                   fontFamily: "SourceSansPro Bold",

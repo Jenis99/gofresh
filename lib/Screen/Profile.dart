@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gofresh/Screen/Home_screen.dart';
 import 'package:gofresh/Screen/Login.dart';
 import 'package:gofresh/Screen/My_Cards.dart';
 import 'package:gofresh/Screen/My_Orders.dart';
@@ -28,17 +29,19 @@ class _ProfileState extends State<Profile> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Row(
-                      children: [
-                        Image.asset("img/Categories.png",width: 20.0,height: 20.0,),
-                        SizedBox(width: 120.0,),
-                        Text("Profile",style: TextStyle(
-                          fontFamily: "SourceSansPro Bold",
-                          fontSize: 25.0,
-                          // fontWeight: FontWeight.bold
-                        ),),
-                      ],
-                    ),
+                    GestureDetector(
+                        onTap:(){
+                          Navigator.of(context).pop();
+                          Navigator.of(context).push(
+                              MaterialPageRoute(builder: (context)=>Home_screen())
+                          );
+                        },
+                        child: Image.asset("img/back.png",width: 20.0,height: 20.0,)),
+                    Text("Profile",style: TextStyle(
+                      fontFamily: "SourceSansPro Bold",
+                      fontSize: 25.0,
+                      // fontWeight: FontWeight.bold
+                    ),),
                     GestureDetector(
                       onTap: ()async{
                         SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -75,6 +78,7 @@ class _ProfileState extends State<Profile> {
                     });
                   },
                   child: Container(
+                    width: 600.0,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(15)
@@ -87,7 +91,7 @@ class _ProfileState extends State<Profile> {
                         children: [
                           Row(
                             children: [
-                              Image.asset("img/Vector (5).png",width: 15.0,),
+                              Image.asset("img/my_profile.png",width: 15.0,),
                               SizedBox(width: 15.0,),
                               Text("My Profile",style: TextStyle(
                                   fontSize: 19.0,
@@ -99,7 +103,7 @@ class _ProfileState extends State<Profile> {
 
                           Row(
                             children: [
-                              Image.asset("img/Vector (Stroke) (1).png",width: 10.0,),
+                              Image.asset("img/open.png",width: 10.0,),
                             ],
                           )
                         ],
@@ -131,7 +135,7 @@ class _ProfileState extends State<Profile> {
                         children: [
                           Row(
                             children: [
-                              Image.asset("img/Vector (6).png",width: 17.0,),
+                              Image.asset("img/my_order.png",width: 17.0,),
                               SizedBox(width: 15.0,),
                               Text("My Order",style: TextStyle(
                                   fontSize: 19.0,
@@ -142,7 +146,7 @@ class _ProfileState extends State<Profile> {
                           ),
                           Row(
                             children: [
-                              Image.asset("img/Vector (Stroke) (1).png",width: 10.0,),
+                              Image.asset("img/open.png",width: 10.0,),
                             ],
                           )
                         ],
@@ -174,7 +178,7 @@ class _ProfileState extends State<Profile> {
                         children: [
                           Row(
                             children: [
-                              Image.asset("img/Vector (7).png",width: 15.0,),
+                              Image.asset("img/my_card.png",width: 15.0,),
                               SizedBox(width: 15.0,),
                               Text("My Cads",style: TextStyle(
                                   fontSize: 19.0,
@@ -186,7 +190,7 @@ class _ProfileState extends State<Profile> {
                           SizedBox(width: 179.0,),
                           Row(
                             children: [
-                              Image.asset("img/Vector (Stroke) (1).png",width: 10.0,),
+                              Image.asset("img/open.png",width: 10.0,),
                             ],
                           )
                         ],
@@ -217,7 +221,7 @@ class _ProfileState extends State<Profile> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
-                            children: [Image.asset("img/Vector (8).png",width: 15.0,),
+                            children: [Image.asset("img/shopping.png",width: 15.0,),
                               SizedBox(width: 15.0,),
                               Text("Shipping Address",style: TextStyle(
                                   fontSize: 19.0,
@@ -226,7 +230,7 @@ class _ProfileState extends State<Profile> {
                               ),),],
                           ),
                          Row(
-                           children: [ Image.asset("img/Vector (Stroke) (1).png",width: 10.0,)],
+                           children: [ Image.asset("img/open.png",width: 10.0,)],
                          )
                         ],
                       ),
@@ -258,7 +262,7 @@ class _ProfileState extends State<Profile> {
                           Row(
 
                             children: [
-                              Image.asset("img/Vector (9).png",width: 15.0,),
+                              Image.asset("img/wishlist.png",width: 15.0,),
                               SizedBox(width: 15.0,),
                               Text("Wishlist",style: TextStyle(
                                   fontSize: 19.0,
@@ -269,7 +273,7 @@ class _ProfileState extends State<Profile> {
                           ),
                           SizedBox(width: 182.0,),
                           Row(
-                            children: [Image.asset("img/Vector (Stroke) (1).png",width: 10.0,)],
+                            children: [Image.asset("img/open.png",width: 10.0,)],
                           )
                         ],
                       ),
@@ -300,7 +304,7 @@ class _ProfileState extends State<Profile> {
                         children: [
                          Row(
                            children: [
-                             Image.asset("img/Vector (10).png",width: 15.0,),
+                             Image.asset("img/setting.png",width: 15.0,),
                              SizedBox(width: 15.0,),
                              Text("Setting",style: TextStyle(
                                  fontSize: 19.0,
@@ -311,7 +315,7 @@ class _ProfileState extends State<Profile> {
                          ),
                           Row(
                             children: [
-                              Image.asset("img/Vector (Stroke) (1).png",width: 10.0,)
+                              Image.asset("img/open.png",width: 10.0,)
                             ],
                           )
                         ],
