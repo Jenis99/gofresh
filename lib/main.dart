@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gofresh/Screen/Home_screen.dart';
-import 'package:gofresh/Screen/SplaceScressn.dart';
+import 'package:gofresh/Screen/SplashScreen.dart';
 import 'package:gofresh/Screen/Login.dart';
 import 'package:gofresh/Screen/Profile.dart';
 import 'package:gofresh/Screen/Reset_password.dart';
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: Home_screen (),
+      home: SplashScreen(),
     );
   }
 }

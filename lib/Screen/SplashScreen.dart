@@ -4,15 +4,15 @@ import 'package:gofresh/Screen/Home_screen.dart';
 import 'package:gofresh/Screen/Login.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class SplaceScreen extends StatefulWidget {
+class SplashScreen extends StatefulWidget {
   @override
-  State<SplaceScreen> createState() => _SplaceScreenState();
+  State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _SplaceScreenState extends State<SplaceScreen> {
+class _SplashScreenState extends State<SplashScreen> {
   checklogin() async
   {
-    Future.delayed(const Duration(milliseconds: 3000), ()  async {
+    Future.delayed(const Duration(milliseconds: 2000), ()  async {
 
       SharedPreferences prefs = await SharedPreferences.getInstance();
       if(prefs.containsKey("email")&&prefs.containsKey("password")){

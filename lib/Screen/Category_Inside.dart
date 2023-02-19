@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gofresh/Screen/Categories.dart';
+import 'package:gofresh/Screen/Home_screen.dart';
 
 class Category_Inside extends StatefulWidget {
   @override
@@ -17,27 +19,27 @@ class _Category_InsideState extends State<Category_Inside> {
               child: Column(
                 children: [
                   SizedBox(height: 30.0,),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
-                        children: [
-                          Image.asset("img/Categories.png",width: 20.0,height: 20.0,),
-                          SizedBox(width: 100.0,),
-                          Text("Vegetables",style: TextStyle(
-                            fontFamily: "SourceSansPro Bold",
+                 Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        GestureDetector(
+                          onTap:(){
+                            Navigator.of(context).pop();
+                            Navigator.of(context).push(
+                              MaterialPageRoute(builder: (context)=>Categories())
+                            );
+                          },
+                            child: Image.asset("img/back.png",width: 20.0,height: 20.0,)),
+                        SizedBox(width: 60.0,),
+                        Text("Vegetables",style: TextStyle(
+                          fontFamily: "SourceSansPro Bold",
                             fontSize: 25.0,
                             // fontWeight: FontWeight.bold
-                          ),),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          Image.asset("img/ic_search (1).png",width: 60.0,)
-                        ],
-                      ),
-                    ],
-                  ),
+                        ),),
+                        SizedBox(width: 30.0,),
+                        Image.asset("img/search.png",width: 60.0,)
+                      ],
+                    ),
                   SizedBox(height: 30.0,),
                   Row(
                     children: [
@@ -53,7 +55,7 @@ class _Category_InsideState extends State<Category_Inside> {
                               child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Image.asset("img/dl.beatsnoop 7.png",width: 140.0,height: 140.0,),
+                                    Image.asset("img/strawberry.png",width: 140.0,height: 140.0,),
                                     SizedBox(height: 1.0,),
                                     Text("Freshly Organic",style: TextStyle(
                                       fontSize: 18.0,

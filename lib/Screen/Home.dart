@@ -25,6 +25,7 @@ class _HomeState extends State<Home> {
                     Row(
                       children: [
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                            Row(
                              crossAxisAlignment: CrossAxisAlignment.start,
@@ -95,35 +96,11 @@ class _HomeState extends State<Home> {
                 ),
               ),
               SizedBox(height: 20.0),
-              // GridView(
-              //     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              //         crossAxisCount: 3,
-              //         crossAxisSpacing: 10.0,
-              //         mainAxisSpacing: 10.0
-              //     ),
-              //     children: [
-              //       GestureDetector(
-              //         onTap: (){},
-              //         child: Container(
-              //           width: MediaQuery.of(context).size.width,
-              //           color:Color(0xffE2F5FF),
-              //           child: Image.asset("img/1homevegetables.png"),
-              //         ),
-              //       ),
-              //
-              //     ],
-              //   ),
               Row(
                 children: [
                   Column(
                     children: [
                       Container(
-                        padding: EdgeInsets.all(8.0),
-                        // decoration: BoxDecoration(
-                        //   borderRadius: BorderRadius.all(
-                        //       Radius.circular(5.0) //
-                        // ),),
-
                         child: Image.asset("img/home_vegetables.png",width: 100.0,height: 100.0,
                         ),
                         decoration: BoxDecoration(
@@ -226,11 +203,6 @@ class _HomeState extends State<Home> {
                     children: [
                       Container(
                         padding: EdgeInsets.all(8.0),
-                        // decoration: BoxDecoration(
-                        //   borderRadius: BorderRadius.all(
-                        //       Radius.circular(5.0) //
-                        // ),),
-
                         child: Image.asset("img/home_babycare.png",width: 100.0,height: 100.0,),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
@@ -246,7 +218,6 @@ class _HomeState extends State<Home> {
                     children: [
                       Container(
                         padding: EdgeInsets.all(8.0),
-
                         child: Image.asset("img/home_peronalcare.png",width: 100.0,height: 100.0,),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
@@ -262,7 +233,6 @@ class _HomeState extends State<Home> {
                     children: [
                       Container(
                         padding: EdgeInsets.all(8.0),
-
                         child: Image.asset("img/home_housecleaning.png",width: 100.0,height: 100.0,),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
@@ -273,8 +243,6 @@ class _HomeState extends State<Home> {
                       Text("House Cleaning")
                     ],
                   ),
-
-
                 ],
               ),
               SizedBox(height: 20.0,),
@@ -314,37 +282,63 @@ class _HomeState extends State<Home> {
                                   children: [
                                     Image.asset("img/strawberry.png",width: 150.0,height: 150.0,),
                                     SizedBox(height: 1.0,),
-                                    Text("Freshly packed",style: TextStyle(
+                                   Container(
+                                    width: 160.0,
+                                    child:
+                                     Column(
+                                      children: [
+                                        Text("Freshly packed Strawberry Fruits",style: TextStyle(
                                       fontSize: 18.0,
                                       fontFamily: "SourceSansPro Bold",
                                     ),),
-                                    Text("Strawberry Fruits",style: TextStyle(
-                                      fontSize: 18.0,
-                                      fontFamily: "SourceSansPro Bold",
-                                    ),),
+                                      ],
+                                    ),
+                                   ),
                                     SizedBox(height: 5.0,),
                                     Text("1 Kg",style: TextStyle(
                                         fontSize: 15.0,
                                         color: Color(0xffC0C0C0)
                                     ),),
                                     SizedBox(height: 10.0,),
-                                    Text("Rs. 125",style: TextStyle(
-                                      fontFamily: "SourceSansPro Bold",
-                                      fontSize: 25.0,
-                                    ),),
-                                    RichText(
-                                        text: new TextSpan(
-                                          children: <TextSpan>[
-                                            new TextSpan(
-                                              text: 'Rs 200',
-                                              style: new TextStyle(
-                                                color: Color(0xffC0C0C0),
-                                                decoration: TextDecoration.lineThrough,
+                                    Row(
+                                      children: [
+                                        Container(
+                                          alignment: Alignment.bottomCenter,
+                                          child: Row(
+                                            children: [
+                                          Text("Rs. 125",style: TextStyle(
+                                            fontFamily: "SourceSansPro Bold",
+                                            fontSize: 20.0,
+                                            ),),
+                                            RichText(
+                                          text: new TextSpan(
+                                            children: <TextSpan>[
+                                              new TextSpan(
+                                                text: 'Rs 200',
+                                                style: new TextStyle(
+                                                  color: Color(0xffC0C0C0),
+                                                  decoration: TextDecoration.lineThrough,
+                                                    fontSize: 10.0,
+                                                ),
                                               ),
-                                            ),
-                                          ],
-                                        )
-                                    ),
+                                            ],
+                                          )
+                                          ),
+                                        ],
+                                        ),
+                                        ),
+                                    Expanded(
+                                      child: Container(
+                                        alignment: Alignment.centerRight,
+                                        padding: EdgeInsets.only(top:10.0,bottom:10.0,right:10.0,left: 10.0 ),
+                                        decoration: BoxDecoration(
+                                          color: Color(0xffFE7551),
+                                        ),
+                                        child: Image.asset("img/home_scroll.png"),
+                                      ),
+                                    )
+                                      ],
+                                    )
                                   ]
                               ),
                             )
@@ -364,14 +358,18 @@ class _HomeState extends State<Home> {
                                   children: [
                                     Image.asset("img/corinander_leaves.png",width: 150.0,height: 150.0,),
                                     SizedBox(height: 1.0,),
-                                    Text("Fresh Organic",style: TextStyle(
+                                     Container(
+                                    width: 160.0,
+                                    child:
+                                     Column(
+                                      children: [
+                                        Text("Fresh Organic Corinander Leaves",style: TextStyle(
                                       fontSize: 18.0,
                                       fontFamily: "SourceSansPro Bold",
                                     ),),
-                                    Text("Corinander Leaves",style: TextStyle(
-                                      fontSize: 18.0,
-                                      fontFamily: "SourceSansPro Bold",
-                                    ),),
+                                      ],
+                                    ),
+                                   ),
                                     SizedBox(height: 5.0,),
                                     Text("1 Kg",style: TextStyle(
                                         fontSize: 15.0,

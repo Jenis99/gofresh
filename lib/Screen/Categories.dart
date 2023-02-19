@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:gofresh/Screen/Category_Inside.dart';
 import 'package:gofresh/Screen/Home_screen.dart';
+import 'package:gofresh/Screen/Login.dart';
 
 class Categories extends StatefulWidget {
   const Categories({Key? key}) : super(key: key);
@@ -37,7 +39,7 @@ class _CategoriesState extends State<Categories> {
                             // fontWeight: FontWeight.bold
                         ),),
                         SizedBox(width: 30.0,),
-                        Image.asset("img/ic_search (1).png",width: 60.0,)
+                        Image.asset("img/search.png",width: 60.0,)
                       ],
                     ),
                     SizedBox(height: 20.0,),
@@ -46,16 +48,24 @@ class _CategoriesState extends State<Categories> {
                       children: [
                         Column(
                           children: [
-                            Container(
-                              height:150.0,
-                              width: 150.0,
-                              decoration: BoxDecoration(
-                                color: Color(0xffE2F5FF),
-                                  borderRadius: BorderRadius.circular(20)
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Image.asset("img/category_vegetables.png",),
+                            GestureDetector(
+                              onTap: (){
+                                print("This is Vegetables");
+                                // Navigator.of(context).push(
+                                // MaterialPageRoute(builder: (context)=>Login())
+                                // );
+                              },
+                              child: Container(
+                                height:150.0,
+                                width: 150.0,
+                                decoration: BoxDecoration(
+                                  color: Color(0xffE2F5FF),
+                                    borderRadius: BorderRadius.circular(20)
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Image.asset("img/category_vegetables.png",),
+                                ),
                               ),
                             ),
                             SizedBox(height: 10.0,),
